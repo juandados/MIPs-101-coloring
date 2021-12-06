@@ -1,6 +1,6 @@
 # MIPs-101-coloring
 This is a very basic example of how to formulate a MIP model using Pulp python's package
-
+![img_20_1.png](img_20_1.png)
 ## Instructions
 1. After cloning this repository in your local machine, set Up the python inviroment:
 ```bash
