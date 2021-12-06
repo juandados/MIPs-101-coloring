@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Licenses
+*.lic
+
+# Logs
+*.log
+
+# Generals
+.DS_Store
+*.swo
+*.swp
