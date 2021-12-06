@@ -1,0 +1,41 @@
+\ Model Colouring_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ node_has_color_0: x_(0,_0) + x_(0,_1) + x_(0,_2) = 1
+ node_has_color_1: x_(1,_0) + x_(1,_1) + x_(1,_2) = 1
+ node_has_color_2: x_(2,_0) + x_(2,_1) + x_(2,_2) = 1
+ node_has_color_3: x_(3,_0) + x_(3,_1) + x_(3,_2) = 1
+ no_neighbors_with_same_color_infeasible_constraint0_0: x_(0,_0) + x_(1,_0)
+   + x_(2,_0) <= 1
+ no_neighbors_with_same_color_infeasible_constraint0_2: x_(0,_0) + x_(2,_0)
+   + x_(3,_0) <= 1
+ no_neighbors_with_same_color_infeasible_constraint0_3: x_(1,_0) + x_(2,_0)
+   + x_(3,_0) <= 1
+ no_neighbors_with_same_color_infeasible_constraint1_0: x_(0,_1) + x_(1,_1)
+   + x_(2,_1) <= 1
+ no_neighbors_with_same_color_infeasible_constraint1_1: x_(0,_1) + x_(1,_1)
+   + x_(3,_1) <= 1
+ no_neighbors_with_same_color_infeasible_constraint1_2: x_(0,_1) + x_(2,_1)
+   + x_(3,_1) <= 1
+ no_neighbors_with_same_color_infeasible_constraint2_0: x_(0,_2) + x_(1,_2)
+   + x_(2,_2) <= 1
+ no_neighbors_with_same_color_infeasible_constraint2_1: x_(0,_2) + x_(1,_2)
+   + x_(3,_2) <= 1
+ no_neighbors_with_same_color_infeasible_constraint2_3: x_(1,_2) + x_(2,_2)
+   + x_(3,_2) <= 1
+Bounds
+ x_(0,_0) free
+ x_(0,_2) free
+ x_(1,_0) free
+ x_(1,_1) free
+ x_(2,_1) free
+ x_(2,_2) free
+ x_(3,_0) free
+ x_(3,_1) free
+ x_(3,_2) free
+Generals
+ x_(0,_0) x_(0,_1) x_(0,_2) x_(1,_0) x_(1,_1) x_(1,_2) x_(2,_0) x_(2,_1)
+ x_(2,_2) x_(3,_0) x_(3,_1) x_(3,_2)
+End
