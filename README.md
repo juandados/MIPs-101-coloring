@@ -4,8 +4,9 @@ This is a very basic example of how to formulate a MIP model using Pulp python's
 ## Instructions
 1. After cloning this repository in your local machine, set Up the python inviroment:
 ```bash
+$ python3 -m venv venv
 $ source venv/bin/activate
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
 2. Run the jupyter:
 ```bash
